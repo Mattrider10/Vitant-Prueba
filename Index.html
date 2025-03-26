@@ -1,0 +1,90 @@
+<!-- ESTE ES EL NUMERO 2 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento Vitant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><img src="Vitant.png" alt="Vitant"></center>
+    <h1 style="color: #EB4953; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Departamento Vitant</h1>
+    <h2>Contacto</h2>
+    <p>
+        <center id="contacto">
+        Telfono: 5554072430 <br>
+       Correo:  sbolanoss@gmail.
+    </center>
+    </p>
+
+    <h2>Información</h2>
+    <center>
+    <p>
+        Este moderno departamento en renta ofrece un diseño contemporáneo que maximiza el espacio y la luminosidad natural. Ubicado en una zona estratégica, proporciona fácil acceso a servicios esenciales, transporte público y áreas recreativas. La distribución del espacio ha sido cuidadosamente planificada para brindar comodidad y funcionalidad, creando un ambiente acogedor ideal para el descanso y la convivencia. Este departamento es perfecto para quienes buscan un equilibrio entre estilo de vida urbano y tranquilidad residencial.
+    </p>
+</center>
+    <h2>Amenidades</h2>
+    <div class="text-gallery">
+        <li>Restaurante</li>
+        <li>Alberca</li>
+        <li>Salon de Fiestas</li>
+        <li>Gimnasio</li>
+        <li>Estacionamiento</li>
+        <li>Jardin de perros</li>
+        <li>Jardin</li>
+        <li>Asadores</li>
+        <li>Area de Trabajo</li>
+        <li>Lavanderia</li>
+        <li>Ludoteca</li>
+        <li>MultiCancha</li>
+    </div>
+    <h2>Imagenes</h2>
+    <div class="gallery">
+        <img src="imagen1.jpg" alt="Imagen 1" onclick="openLightbox(this)">
+        <img src="imagen2.jpg" alt="Imagen 2" onclick="openLightbox(this)">
+        <img src="imagen3.jpg" alt="Imagen 3" onclick="openLightbox(this)">
+        <img src="imagen9.jpg" alt="Imagen 9" onclick="openLightbox(this)">
+        <img src="imagen10.jpg" alt="Imagen 10" onclick="openLightbox(this)">
+        <img src="imagen11.jpg" alt="Imagen 11" onclick="openLightbox(this)">
+        <img src="imagen12.jpg" alt="Imagen 12" onclick="openLightbox(this)">
+        <img src="imagen13.jpg" alt="Imagen 13" onclick="openLightbox(this)">
+        <img src="imagen14.jpg" alt="Imagen 14" onclick="openLightbox(this)">
+        <img src="imagen15.jpg" alt="Imagen 15" onclick="openLightbox(this)">
+        <img src="imagen17.jpg" alt="Imagen 17" onclick="openLightbox(this)">
+    </div>
+    <br>
+    <div class="gallery">
+        <img src="imagenvertical5.jpg" alt="Imagen 5" onclick="openLightbox(this)">
+        <img src="imagenvertical6.jpg" alt="Imagen 6" onclick="openLightbox(this)">
+        <img src="imagenvertical7.jpg" alt="Imagen 7" onclick="openLightbox(this)">
+        <img src="imagenvertical8.jpg" alt="Imagen 8" onclick="openLightbox(this)">
+    </div>
+    <br>
+    <img src="imagen16.jpg" alt="imagen15" onclick="openLightbox(this)">
+
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="">
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+        }
+
+        function closeLightbox() {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</script>
+</body>
+</html>
